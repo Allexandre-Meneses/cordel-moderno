@@ -20,8 +20,16 @@
     font-size: 1em;
 }
 
+html, body {
+    min-height: 100vh;
+}
+
 a {
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 header {
@@ -51,42 +59,48 @@ header a {
     font-weight: bold;
 }
 
-article {
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     padding: 30px;
 }
 
-article > p {
+section > p {
     font-family: var(--font-cordel);
     font-size: 3.5vw;
     margin-top: 25px;
 }
 
-article#joaninha {
+section#joaninha {
     background-image: url(../assets/images/background001.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
+    box-shadow: inset 0 6px 10px rgba(0, 0, 0, 0.459);
 }
 
-article#joaninha p {
+section#joaninha p {
     background-color: rgba(0, 0, 0, 0.562);
     display: inline-block;
     padding: 10px;
     color: var(--cor1);
+    text-shadow: 1px 1px 0px black;
 }
 
-article#cartas {
+section#cartas {
     background-image: url(../assets/images/background002.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    box-shadow: inset 0 6px 10px rgba(0, 0, 0, 0.459);
 }
 
-article#cartas p {
+section#cartas p {
     background-color: rgba(0, 0, 0, 0.514);
     display: inline-block;
     padding: 10px;
     color: var(--cor1);
+    text-shadow: 1px 1px 0px black;
 }
 
 footer {
